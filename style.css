@@ -47,3 +47,11 @@ blockquote{
     color: #939393;
 
 }
+
+h1{
+    font-family: 'Lora', serif;
+    font-size: calc(6* var(--basetext));
+    margin-bottom: calc(2*var(--baseline));
+    margin-top: calc(10*var(--baseline));
+    line-height: calc(3.5* var(--baseline));
+}
