@@ -19,6 +19,9 @@ footer{
     font-size: calc(0.75*var(--basetext));
     line-height: calc(0.7* var(--baseline));
     padding-top: var(--baseline);
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    padding-bottom: var(--spacing); 
 } 
 
 @media (min-width: 768px) {
@@ -32,18 +35,21 @@ footer{
 
     footer{
         flex-direction: row;
-        height: 150px;
     }
   
     }
 
 body {
-    padding: var(--spacing);
+
     font-size:var(--basetext);
     line-height: var(--baseline);
     color: var(--color);
     font-family: 'Plus Jakarta Sans', sans-serif;
 
+}
+
+main {
+    padding: var(--spacing);  
 }
 
 p{
