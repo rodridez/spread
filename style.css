@@ -10,6 +10,18 @@
 
 }
 
+.font-1 {
+    font-family: 'Young Serif', serif;
+}
+
+.font-2 {
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.font-3 {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
 footer{
     display: flex;
     flex-direction: column;
