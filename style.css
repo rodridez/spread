@@ -36,7 +36,7 @@ p{
 
 h2{
     margin-bottom: var(--baseline);
-    margin-top: var(--baseline);
+    margin-top: calc(2*var(--baseline));
     font-weight: 800;
 }
 
@@ -60,20 +60,25 @@ h1{
 h2:Nth-of-type(4){
     font-family: 'young serif', serif;
     font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
 }
+
 
 h2:Nth-of-type(5){
     font-family: 'permanent marker', sans-serif;
     font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
 }
 
 h2:Nth-of-type(6){
     font-family: 'Pixelify Sans', sans-serif;
     font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
 }
 
 h2:Nth-of-type(7){
     font-family: 'Lobster', serif;
     font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
 }
 
