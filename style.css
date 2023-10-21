@@ -1,2 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Unica+One&family=Young+Serif&display=swap');
+
+:root {
+--spacing: 20px;
+--color: darkgray;
+--basetext: 18pt;
+--baseline: 24;
+
+}
+
+@media (min-width: 768px) {
+:root {
+--spacing: 40px;
+--color: darkgray;
+--basetext: 20pt;
+--baseline: 33;
+}
+}
+
+body {
+padding: var(--spacing);
+font-size:var(--basetext);
+line-height: var(--baseline)
+}
