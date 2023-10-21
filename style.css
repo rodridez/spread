@@ -43,7 +43,7 @@ h2{
 blockquote{
     margin-bottom: var(--baseline);
     margin-left: var(--spacing);
-    max-width: var(--max-width);
+    max-width: calc(var(--max-width) - 10ch);
     font-style: italic;
     color: #939393;
 
@@ -82,3 +82,21 @@ h2:Nth-of-type(7){
     line-height: calc(1.5* var(--baseline));
 }
 
+em {
+    font-style: italic;
+}
+
+b {
+    font-weight: 600;
+}
+
+ul, ol {
+    margin-bottom: var(--baseline);
+}
+
+li {
+    max-width: var(--max-width);
+    list-style-type: disc;
+    margin-left: calc(1.5 * var(--spacing));
+    margin-bottom: calc( 0.3 * var(--baseline));
+}
