@@ -16,7 +16,7 @@
         --color: #262626;
         --basetext: 20pt;
         --baseline: 33pt;
-        --max-width: 60ch;
+        --max-width: 50ch;
     }
     }
 
@@ -95,7 +95,7 @@ ul, ol {
 }
 
 li {
-    max-width: var(--max-width);
+    max-width: calc(var(--max-width) - 10ch);
     list-style-type: disc;
     margin-left: calc(1.5 * var(--spacing));
     margin-bottom: calc( 0.3 * var(--baseline));
