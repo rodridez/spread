@@ -3,7 +3,7 @@
 
 :root {
     --spacing: 20px;
-    --color: darkgray;
+    --color: #262626;
     --basetext: 18pt;
     --baseline: 24pt;
 
@@ -12,7 +12,7 @@
 @media (min-width: 768px) {
     :root {
         --spacing: 80px;
-        --color: darkgray;
+        --color: #262626;
         --basetext: 20pt;
         --baseline: 33pt;
     }
@@ -23,4 +23,5 @@ body {
     font-size:var(--basetext);
     line-height: var(--baseline);
     color: var(--color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
