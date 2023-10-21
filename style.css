@@ -24,4 +24,18 @@ body {
     line-height: var(--baseline);
     color: var(--color);
     font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+p{
+    margin-bottom: var(--baseline);
+}
+
+h2{
+    margin-bottom: var(--baseline);
+    margin-top: var(--baseline);
+}
+
+blockquote{
+    margin-bottom: var(--baseline);
 }
