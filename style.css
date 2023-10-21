@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Unica+One&family=Young+Serif&display=swap');
+@@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600&family=Unica+One&family=Young+Serif&display=swap');
 
 :root {
     --spacing: 20px;
@@ -37,6 +37,7 @@ p{
 h2{
     margin-bottom: var(--baseline);
     margin-top: var(--baseline);
+    font-weight: 800;
 }
 
 blockquote{
@@ -54,4 +55,10 @@ h1{
     margin-bottom: calc(2*var(--baseline));
     margin-top: calc(10*var(--baseline));
     line-height: calc(3.5* var(--baseline));
+}
+
+h2:Nth-of-type(4){
+    font-family: 'young serif', serif;
+    font-size: calc(2*var(--basetext));
+
 }
