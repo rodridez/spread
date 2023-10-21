@@ -24,6 +24,15 @@ footer{
     padding-bottom: var(--spacing); 
 } 
 
+h1:nth-of-type(2) {
+    color: pink;
+    position: absolute;
+    top: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 @media (min-width: 768px) {
     :root {
         --spacing: 80px;
@@ -35,6 +44,10 @@ footer{
 
     footer{
         flex-direction: row;
+    }
+
+    h1:nth-of-type(2) {
+        top: 80px;
     }
   
     }
@@ -123,6 +136,7 @@ li {
     margin-left: calc(1.5 * var(--spacing));
     margin-bottom: calc( 0.3 * var(--baseline));
 }
+
 
 
 
