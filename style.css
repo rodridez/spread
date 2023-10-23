@@ -22,6 +22,10 @@
     font-family: 'Pixelify Sans', sans-serif;
 }
 
+.font-4 {
+    font-family: 'Lobster', sans-serif;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -51,6 +55,29 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
     margin-top: calc(-2.8* var(--baseline));
     opacity: 0.5;
     z-index: -1;
+}
+
+.mosaic-container {
+    height: 320px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: calc(-1* var(--spacing));
+    margin-top: calc(-1* var(--spacing));
+}
+
+.mosaic {
+    font-size: calc(5* var(--basetext));
+    line-height: calc(1.5* var(--baseline));
+    opacity: 15%;
+
+}
+.mosaic-2 {
+    font-size: calc(4.5* var(--basetext));
+    position: absolute;
+    top: 0;
+    line-height: calc(1.6* var(--baseline));
+    opacity: 25%;
+    text-align: right;
 }
 
 
@@ -116,7 +143,7 @@ h1{
     line-height: calc(3.5* var(--baseline));
 }
 
-h2:nth-of-type(4), h2:nth-of-type(5){
+h2:nth-of-type(4), h2:nth-of-type(9){
     font-family: 'young serif', serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
@@ -129,7 +156,7 @@ h2:nth-of-type(6), h2:nth-of-type(11){
     line-height: calc(1.5* var(--baseline));
 }
 
-h2:nth-of-type(8), h2:nth-of-type(9){
+h2:nth-of-type(8), h2:nth-of-type(5){
     font-family: 'Pixelify Sans', sans-serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
