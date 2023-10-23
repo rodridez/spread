@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600&family=Unica+One&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600&family=Unica+One&family=UnifrakturCook:wght@700&family=Young+Serif&display=swap');
 
 :root {
     --spacing: 20px;
@@ -15,7 +15,7 @@
 }
 
 .font-2 {
-    font-family: 'Permanent Marker', sans-serif;
+    font-family: 'UnifrakturCook', sans-serif;
 }
 
 .font-3 {
@@ -44,6 +44,15 @@ h1:nth-of-type(2) {
     opacity: 0.5;
     z-index: -1;
 }
+
+h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
+    color: pink;
+    position: absolute;
+    margin-top: calc(-2.8* var(--baseline));
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 @media (min-width: 768px) {
     :root {
@@ -114,8 +123,8 @@ h2:nth-of-type(4), h2:nth-of-type(5){
 }
 
 
-h2:nth-of-type(6), h2:nth-of-type(7){
-    font-family: 'permanent marker', sans-serif;
+h2:nth-of-type(6), h2:nth-of-type(11){
+    font-family: 'UnifrakturCook', sans-serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
 }
@@ -126,7 +135,7 @@ h2:nth-of-type(8), h2:nth-of-type(9){
     line-height: calc(1.5* var(--baseline));
 }
 
-h2:nth-of-type(10), h2:nth-of-type(11){
+h2:nth-of-type(10), h2:nth-of-type(7){
     font-family: 'Lobster', serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
