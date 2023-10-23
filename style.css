@@ -70,6 +70,8 @@ body {
     line-height: var(--baseline);
     color: var(--color);
     font-family: 'Plus Jakarta Sans', sans-serif;
+    /* max-width: 1000px;
+    margin: auto; */
 
 }
 
@@ -105,26 +107,26 @@ h1{
     line-height: calc(3.5* var(--baseline));
 }
 
-h2:Nth-of-type(4){
+h2:nth-of-type(4), h2:nth-of-type(5){
     font-family: 'young serif', serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
 }
 
 
-h2:Nth-of-type(5){
+h2:nth-of-type(6), h2:nth-of-type(7){
     font-family: 'permanent marker', sans-serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
 }
 
-h2:Nth-of-type(6){
+h2:nth-of-type(8), h2:nth-of-type(9){
     font-family: 'Pixelify Sans', sans-serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
 }
 
-h2:Nth-of-type(7){
+h2:nth-of-type(10), h2:nth-of-type(11){
     font-family: 'Lobster', serif;
     font-size: calc(2*var(--basetext));
     line-height: calc(1.5* var(--baseline));
