@@ -80,6 +80,24 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
     text-align: right;
 }
 
+.mosaic-container-mid {
+    height: 165px;
+    overflow: hidden;
+    position: relative;
+    margin-left: calc(-1* var(--spacing));
+    margin-right: calc(-1* var(--spacing));
+    margin-top: calc(2* var(--spacing));
+}
+
+.mosaic-container-end {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    background-color: lightgray;
+    margin-left: calc(-1* var(--spacing));
+    margin-right: calc(-1* var(--spacing));
+}
+
 
 @media (min-width: 768px) {
     :root {
