@@ -99,7 +99,7 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     :root {
         --spacing: 80px;
         --color: #262626;
