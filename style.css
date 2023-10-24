@@ -98,6 +98,13 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
     margin-right: calc(-1* var(--spacing));
 }
 
+h1{
+    font-family: 'Lora', serif;
+    font-size: calc(4* var(--basetext));
+    margin-bottom: calc(2*var(--baseline));
+    margin-top: calc(10*var(--baseline));
+    line-height: calc(2.25* var(--baseline));
+}
 
 @media (min-width: 768px) {
     :root {
@@ -114,6 +121,14 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
 
     h1:nth-of-type(2) {
         top: 80px;
+    }
+
+    h1{
+        font-family: 'Lora', serif;
+        font-size: calc(6* var(--basetext));
+        margin-bottom: calc(2*var(--baseline));
+        margin-top: calc(10*var(--baseline));
+        line-height: calc(3.5* var(--baseline));
     }
   
     }
@@ -151,14 +166,6 @@ blockquote{
     font-style: italic;
     color: #939393;
 
-}
-
-h1{
-    font-family: 'Lora', serif;
-    font-size: calc(6* var(--basetext));
-    margin-bottom: calc(2*var(--baseline));
-    margin-top: calc(10*var(--baseline));
-    line-height: calc(3.5* var(--baseline));
 }
 
 h2:nth-of-type(4), h2:nth-of-type(9){
