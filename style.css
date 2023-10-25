@@ -52,10 +52,10 @@ p{
 
 h1{
     font-family: 'Lora', serif;
-    font-size: calc(4* var(--basetext));
+    font-size: calc(2.5* var(--basetext));
     margin-bottom: calc(2*var(--baseline));
     margin-top: calc(10*var(--baseline));
-    line-height: calc(2.25* var(--baseline));
+    line-height: calc(1.5* var(--baseline));
 }
 
 h2{
@@ -146,7 +146,7 @@ h1:nth-of-type(2) {
 
 .mosaic-container {
     height: 320px;
-    /*width: 100%;*/
+    width: 100%;
     overflow: hidden;
     position: absolute;
     margin-left: calc(-1* var(--spacing));
@@ -187,6 +187,47 @@ h1:nth-of-type(2) {
     margin-right: calc(-1* var(--spacing)); */
 }
 
+/*===================== Breakpoint 380px =====================*/
+
+@media (min-width: 380px){
+
+    h1{
+        font-family: 'Lora', serif;
+        font-size: calc(3* var(--basetext));
+        margin-bottom: calc(2*var(--baseline));
+        margin-top: calc(10*var(--baseline));
+        line-height: calc(2* var(--baseline));
+    }
+
+}
+
+/*===================== Breakpoint 450px =====================*/
+
+@media (min-width: 450px){
+
+    h1{
+        font-family: 'Lora', serif;
+        font-size: calc(3.5* var(--basetext));
+        margin-bottom: calc(2*var(--baseline));
+        margin-top: calc(10*var(--baseline));
+        line-height: calc(2.5* var(--baseline));
+    }
+
+}
+
+/*===================== Breakpoint 595px =====================*/
+
+@media (min-width: 595px){
+
+    h1{
+        font-family: 'Lora', serif;
+        font-size: calc(5* var(--basetext));
+        margin-bottom: calc(2*var(--baseline));
+        margin-top: calc(10*var(--baseline));
+        line-height: calc(3.25* var(--baseline));
+    }
+
+}
 
 /*===================== Desktop Breakpoint 768px =====================*/
 
@@ -209,10 +250,10 @@ h1:nth-of-type(2) {
 
     h1{
         font-family: 'Lora', serif;
-        font-size: calc(6* var(--basetext));
+        font-size: calc(5* var(--basetext));
         margin-bottom: calc(2*var(--baseline));
         margin-top: calc(10*var(--baseline));
-        line-height: calc(3.5* var(--baseline));
+        line-height: calc(3.25* var(--baseline));
     }
   
     blockquote{
@@ -230,7 +271,19 @@ h1:nth-of-type(2) {
     }
 
 
+/*===================== Breakpoint 875px =====================*/
 
+@media (min-width: 875px){
+
+    h1{
+        font-family: 'Lora', serif;
+        font-size: calc(6* var(--basetext));
+        margin-bottom: calc(2*var(--baseline));
+        margin-top: calc(10*var(--baseline));
+        line-height: calc(3.5* var(--baseline));
+    }
+
+}
 
 
 
