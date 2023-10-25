@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Permanent+Marker&family=Pixelify+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600&family=Unica+One&family=UnifrakturCook:wght@700&family=Young+Serif&display=swap');
 
+/*===================== Setting up Variables =====================*/
+
 :root {
     --spacing: 20px;
     --color: #262626;
@@ -9,6 +11,8 @@
     --max-width: 100%;
 
 }
+
+/*===================== Setting up 4 fonts =====================*/
 
 .font-1 {
     font-family: 'Young Serif', serif;
@@ -26,6 +30,67 @@
     font-family: 'Lobster', sans-serif;
 }
 
+/*===================== General Mobile Style =====================*/
+
+body {
+    font-size:var(--basetext);
+    line-height: var(--baseline);
+    color: var(--color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* max-width: 1000px;
+    margin: auto; */
+}
+
+main {
+    padding: var(--spacing);  
+}
+
+p{
+    margin-bottom: var(--baseline);
+    max-width: var(--max-width);
+}
+
+h1{
+    font-family: 'Lora', serif;
+    font-size: calc(4* var(--basetext));
+    margin-bottom: calc(2*var(--baseline));
+    margin-top: calc(10*var(--baseline));
+    line-height: calc(2.25* var(--baseline));
+}
+
+h2{
+    margin-bottom: var(--baseline);
+    margin-top: calc(2*var(--baseline));
+    font-weight: 800;
+}
+
+blockquote{
+    margin-bottom: var(--baseline);
+    margin-left: var(--spacing);
+    max-width: calc(var(--max-width) - 10ch);
+    font-style: italic;
+    color: #939393;
+}
+
+em {
+    font-style: italic;
+}
+
+b {
+    font-weight: 600;
+}
+
+ul, ol {
+    margin-bottom: var(--baseline);
+}
+
+li {
+    max-width: calc(var(--max-width) - 10ch);
+    list-style-type: disc;
+    margin-left: calc(1.5 * var(--spacing));
+    margin-bottom: calc( 0.3 * var(--baseline));
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -39,6 +104,8 @@ footer{
     padding-right: var(--spacing);
     padding-bottom: var(--spacing); 
 } 
+
+/*===================== Background versions of the headings =====================*/
 
 h1:nth-of-type(2) {
     color: pink;
@@ -56,6 +123,35 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
     opacity: 0.5;
     z-index: -1;
 }
+
+/*===================== Changing the fonts for the H2s =====================*/
+
+h2:nth-of-type(4), h2:nth-of-type(9){
+    font-family: 'young serif', serif;
+    font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));;
+}
+
+
+h2:nth-of-type(6), h2:nth-of-type(11){
+    font-family: 'UnifrakturCook', sans-serif;
+    font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
+}
+
+h2:nth-of-type(8), h2:nth-of-type(5){
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
+}
+
+h2:nth-of-type(10), h2:nth-of-type(7){
+    font-family: 'Lobster', serif;
+    font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
+}
+
+/*===================== Setting up Mosaiacs =====================*/
 
 .mosaic-container {
     height: 320px;
@@ -98,13 +194,8 @@ h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
     margin-right: calc(-1* var(--spacing));
 }
 
-h1{
-    font-family: 'Lora', serif;
-    font-size: calc(4* var(--basetext));
-    margin-bottom: calc(2*var(--baseline));
-    margin-top: calc(10*var(--baseline));
-    line-height: calc(2.25* var(--baseline));
-}
+
+/*===================== Desktop Breakpoint 768px =====================*/
 
 @media (min-width: 768px) {
     :root {
@@ -133,84 +224,11 @@ h1{
   
     }
 
-body {
-
-    font-size:var(--basetext);
-    line-height: var(--baseline);
-    color: var(--color);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    /* max-width: 1000px;
-    margin: auto; */
-
-}
-
-main {
-    padding: var(--spacing);  
-}
-
-p{
-    margin-bottom: var(--baseline);
-    max-width: var(--max-width);
-}
-
-h2{
-    margin-bottom: var(--baseline);
-    margin-top: calc(2*var(--baseline));
-    font-weight: 800;
-}
-
-blockquote{
-    margin-bottom: var(--baseline);
-    margin-left: var(--spacing);
-    max-width: calc(var(--max-width) - 10ch);
-    font-style: italic;
-    color: #939393;
-
-}
-
-h2:nth-of-type(4), h2:nth-of-type(9){
-    font-family: 'young serif', serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));;
-}
 
 
-h2:nth-of-type(6), h2:nth-of-type(11){
-    font-family: 'UnifrakturCook', sans-serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
-}
 
-h2:nth-of-type(8), h2:nth-of-type(5){
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
-}
 
-h2:nth-of-type(10), h2:nth-of-type(7){
-    font-family: 'Lobster', serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
-}
 
-em {
-    font-style: italic;
-}
-
-b {
-    font-weight: 600;
-}
-
-ul, ol {
-    margin-bottom: var(--baseline);
-}
-
-li {
-    max-width: calc(var(--max-width) - 10ch);
-    list-style-type: disc;
-    margin-left: calc(1.5 * var(--spacing));
-    margin-bottom: calc( 0.3 * var(--baseline));
-}
 
 
 
