@@ -220,7 +220,13 @@ h1:nth-of-type(2) {
     li {
         max-width: calc(var(--max-width) - 10ch);
     }
+
+    section{
+        margin: auto;
+        width: 900px;
     }
+    }
+
 
 
 
