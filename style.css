@@ -64,14 +64,6 @@ h2{
     font-weight: 800;
 }
 
-blockquote{
-    margin-bottom: var(--baseline);
-    margin-left: var(--spacing);
-    max-width: calc(var(--max-width) - 10ch);
-    font-style: italic;
-    color: #939393;
-}
-
 em {
     font-style: italic;
 }
@@ -85,10 +77,18 @@ ul, ol {
 }
 
 li {
-    max-width: calc(var(--max-width) - 10ch);
+    max-width: var(--max-width);
     list-style-type: disc;
     margin-left: calc(1.5 * var(--spacing));
     margin-bottom: calc( 0.3 * var(--baseline));
+}
+
+blockquote{
+    margin-bottom: var(--baseline);
+    margin-left: var(--spacing);
+    max-width: var(--max-width);
+    font-style: italic;
+    color: #707070;
 }
 
 footer{
@@ -222,6 +222,13 @@ h2:nth-of-type(10), h2:nth-of-type(7){
         line-height: calc(3.5* var(--baseline));
     }
   
+    blockquote{
+        max-width: calc(var(--max-width) - 10ch);
+    }
+
+    li {
+        max-width: calc(var(--max-width) - 10ch);
+    }
     }
 
 
