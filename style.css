@@ -179,11 +179,12 @@ h1:nth-of-type(2) {
 
 .mosaic-container-end {
     height: 320px;
+    width: 100%;
     overflow: hidden;
     position: relative;
     background-color: lightgray;
-    margin-left: calc(-1* var(--spacing));
-    margin-right: calc(-1* var(--spacing));
+    /* margin-left: calc(-1* var(--spacing));
+    margin-right: calc(-1* var(--spacing)); */
 }
 
 
@@ -224,7 +225,7 @@ h1:nth-of-type(2) {
 
     section{
         margin: auto;
-        width: 900px;
+        max-width: 900px;
     }
     }
 
