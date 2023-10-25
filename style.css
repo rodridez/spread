@@ -62,6 +62,16 @@ h2{
     margin-bottom: var(--baseline);
     margin-top: calc(2*var(--baseline));
     font-weight: 800;
+    font-size: calc(1.5*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
+}
+
+h3{
+    margin-bottom: var(--baseline);
+    margin-top: calc(2*var(--baseline));
+    font-weight: 800;
+    font-size: calc(2*var(--basetext));
+    line-height: calc(1.5* var(--baseline));
 }
 
 em {
@@ -117,38 +127,27 @@ h1:nth-of-type(2) {
 }
 
 h2:nth-of-type(5), h2:nth-of-type(7), h2:nth-of-type(9), h2:nth-of-type(11) {
-    color: tomato;
+    color: pink;
     position: relative;
     margin-top: calc(-2.8* var(--baseline));
     opacity: 0.5;
     z-index: -1;
 }
 
-/*===================== Changing the fonts for the H2s =====================*/
-
-h2:nth-of-type(4), h2:nth-of-type(9){
-    font-family: 'young serif', serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));;
+.h3-collapse {
+    position: absolute;
 }
 
-
-h2:nth-of-type(6), h2:nth-of-type(11){
-    font-family: 'UnifrakturCook', sans-serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
+.h3-collapse-back {
+    position: absolute;
+    color: pink;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-h2:nth-of-type(8), h2:nth-of-type(5){
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
-}
-
-h2:nth-of-type(10), h2:nth-of-type(7){
-    font-family: 'Lobster', serif;
-    font-size: calc(2*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
+.h3-container {
+    height: calc(4* var(--baseline));
+    margin-bottom: var(--baseline);
 }
 
 /*===================== Setting up Mosaiacs =====================*/
