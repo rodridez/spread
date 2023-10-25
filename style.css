@@ -146,6 +146,7 @@ h1:nth-of-type(2) {
 
 .mosaic-container {
     height: 320px;
+    /*width: 100%;*/
     overflow: hidden;
     position: absolute;
     margin-left: calc(-1* var(--spacing));
