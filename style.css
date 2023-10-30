@@ -155,21 +155,32 @@ h1:nth-of-type(2) {
 
 .h3-collapse {
     position: absolute;
+    color: #0175AA;
+    mix-blend-mode: color-burn;
 }
 
 .h3-collapse-back {
     position: absolute;
     color: #55A6CB;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 }
 
 .h3-container {
     height: calc(3* var(--baseline));
-    /* margin-bottom: var(--baseline); */
+    margin-bottom: var(--baseline);
 }
 
 /*===================== Setting up Mosaiacs =====================*/
+
+/* .mosaic-container {
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    margin-left: calc(-1* var(--spacing));
+    margin-top: calc(-1* var(--spacing));
+} */
 
 .mosaic-container {
     height: 320px;
@@ -178,6 +189,8 @@ h1:nth-of-type(2) {
     position: absolute;
     margin-left: calc(-1* var(--spacing));
     margin-top: calc(-1* var(--spacing));
+    display: grid;
+    grid-template-columns: 1fr, 1fr,;
 }
 
 .mosaic {
@@ -312,6 +325,49 @@ h1:nth-of-type(2) {
         line-height: calc(3.5* var(--baseline));
     }
 
+}
+
+@media print {
+    :root {
+        --spacing: 40px;
+        --color: #262626;
+        --basetext: 10pt;
+        --baseline: 14pt;
+        --max-width: 50ch;
+    }
+
+    section { 
+        break-before: page; 
+    }
+
+    .mosaic-container-mid, .mosaic-container-end {
+        display: none;
+    }
+
+    ol, ul {
+        break-inside: avoid;
+    }
+
+    blockquote{
+        margin-left: calc(0.25* var(--spacing));
+    }
+
+    .mosaic-2, .h3-collapse-back, h1:nth-of-type(2) {
+        text-align: right;
+        right: 0px;
+    }
+
+    h1:nth-of-type(2){
+        top: 40px;
+    }
+
+    .h3-collapse {
+        mix-blend-mode: normal;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 
