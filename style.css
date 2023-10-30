@@ -6,8 +6,8 @@
 :root {
     --spacing: 20px;
     --color: #262626;
-    --basetext: 18pt;
-    --baseline: 28pt;
+    --basetext: 14pt;
+    --baseline: 26pt;
     --max-width: 100%;
 
 }
@@ -68,9 +68,9 @@ h2{
 
 h3{
     margin-bottom: var(--baseline);
-    margin-top: calc(2*var(--baseline));
+    margin-top: calc(1.5*var(--baseline));
     font-weight: 800;
-    font-size: calc(2*var(--basetext));
+    font-size: calc(1.5*var(--basetext));
     line-height: calc(1.5* var(--baseline));
 }
 
@@ -264,8 +264,8 @@ h1:nth-of-type(2) {
     :root {
         --spacing: 80px;
         --color: #262626;
-        --basetext: 20pt;
-        --baseline: 33pt;
+        --basetext: 17pt;
+        --baseline: 32pt;
         --max-width: 50ch;
     }
 
