@@ -120,7 +120,7 @@ footer{
     display: flex;
     flex-direction: column;
     column-gap: 80px;
-    background-color: lightgray;
+    background-color: #5FC1EE;
     justify-content: space-between;
     font-size: calc(0.75*var(--basetext));
     line-height: calc(0.7* var(--baseline));
@@ -145,7 +145,7 @@ a {
 /*===================== Background versions of the headings =====================*/
 
 h1:nth-of-type(2) {
-    color: #707070;
+    color: #5FC1EE;
     position: absolute;
     top: 30px;
     font-family: 'Pixelify Sans', sans-serif;
@@ -159,7 +159,7 @@ h1:nth-of-type(2) {
 
 .h3-collapse-back {
     position: absolute;
-    color: #707070;
+    color: #55A6CB;
     opacity: 0.5;
     z-index: -1;
 }
@@ -184,6 +184,7 @@ h1:nth-of-type(2) {
     font-size: calc(5* var(--basetext));
     line-height: calc(1.5* var(--baseline));
     opacity: 15%;
+    color: #5FC1EE;
 
 }
 .mosaic-2 {
@@ -193,6 +194,7 @@ h1:nth-of-type(2) {
     line-height: calc(1.6* var(--baseline));
     opacity: 25%;
     text-align: right;
+    color: #55A6CB;
 }
 
 .mosaic-container-mid {
@@ -209,7 +211,7 @@ h1:nth-of-type(2) {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: lightgray;
+    background-color: #5FC1EE;
     /* margin-left: calc(-1* var(--spacing));
     margin-right: calc(-1* var(--spacing)); */
 }
