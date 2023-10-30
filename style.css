@@ -70,7 +70,7 @@ h3{
     /* margin-bottom: var(--baseline); */
     margin-top: calc(1.5*var(--baseline));
     font-weight: 800;
-    font-size: calc(1.25*var(--basetext));
+    font-size: calc(1.5*var(--basetext));
     line-height: calc(1* var(--baseline));
 }
 
