@@ -115,6 +115,18 @@ footer{
     padding-bottom: var(--spacing); 
 } 
 
+a {
+    text-decoration: underline;
+    text-decoration-color: #21ABBE;
+    text-underline-offset: 5px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+    text-underline-offset: 2px;
+  }
+
 /*===================== Background versions of the headings =====================*/
 
 h1:nth-of-type(2) {
