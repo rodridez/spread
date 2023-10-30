@@ -6,8 +6,8 @@
 :root {
     --spacing: 20px;
     --color: #262626;
-    --basetext: 14pt;
-    --baseline: 26pt;
+    --basetext: 12pt;
+    --baseline: 24pt;
     --max-width: 100%;
 
 }
@@ -63,15 +63,15 @@ h2{
     margin-top: calc(2*var(--baseline));
     font-weight: 800;
     font-size: calc(1.5*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
+    line-height: calc(1* var(--baseline));
 }
 
 h3{
-    margin-bottom: var(--baseline);
+    /* margin-bottom: var(--baseline); */
     margin-top: calc(1.5*var(--baseline));
     font-weight: 800;
-    font-size: calc(1.5*var(--basetext));
-    line-height: calc(1.5* var(--baseline));
+    font-size: calc(1.25*var(--basetext));
+    line-height: calc(1* var(--baseline));
 }
 
 em {
@@ -165,8 +165,8 @@ h1:nth-of-type(2) {
 }
 
 .h3-container {
-    height: calc(4* var(--baseline));
-    margin-bottom: var(--baseline);
+    height: calc(3* var(--baseline));
+    /* margin-bottom: var(--baseline); */
 }
 
 /*===================== Setting up Mosaiacs =====================*/
