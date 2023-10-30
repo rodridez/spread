@@ -88,9 +88,24 @@ ul, ol {
 
 li {
     max-width: var(--max-width);
-    list-style-type: disc;
+    /*list-style-type: disc;*/
+
     margin-left: calc(1.5 * var(--spacing));
     margin-bottom: calc( 0.3 * var(--baseline));
+}
+
+ ol li::before{
+    content:"•"; 
+    color: #21ABBE;
+    margin-left: -35px;
+    margin-right: 15px;
+}
+
+ul li::before{
+    content:"•"; 
+    color: #21ABBE;
+    margin-left: -35px;
+    margin-right: 15px;
 }
 
 blockquote{
