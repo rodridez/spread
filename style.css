@@ -54,7 +54,7 @@ h1{
     font-family: 'Lora', serif;
     font-size: calc(2.5* var(--basetext));
     margin-bottom: calc(2*var(--baseline));
-    margin-top: calc(10*var(--baseline));
+    margin-top: calc(13*var(--baseline));
     line-height: calc(1.5* var(--baseline));
 }
 
@@ -224,7 +224,7 @@ h1:nth-of-type(2) {
         font-family: 'Lora', serif;
         font-size: calc(3* var(--basetext));
         margin-bottom: calc(2*var(--baseline));
-        margin-top: calc(10*var(--baseline));
+        margin-top: calc(13*var(--baseline));
         line-height: calc(1.75* var(--baseline));
     }
 
@@ -238,7 +238,7 @@ h1:nth-of-type(2) {
         font-family: 'Lora', serif;
         font-size: calc(3.5* var(--basetext));
         margin-bottom: calc(2*var(--baseline));
-        margin-top: calc(10*var(--baseline));
+        margin-top: calc(13*var(--baseline));
         line-height: calc(2.5* var(--baseline));
     }
 
@@ -252,7 +252,7 @@ h1:nth-of-type(2) {
         font-family: 'Lora', serif;
         font-size: calc(5* var(--basetext));
         margin-bottom: calc(2*var(--baseline));
-        margin-top: calc(10*var(--baseline));
+        margin-top: calc(15*var(--baseline));
         line-height: calc(3.25* var(--baseline));
     }
 
