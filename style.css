@@ -6,7 +6,7 @@
 :root {
     --spacing: 20px;
     --color: #262626;
-    --basetext: 12pt;
+    --basetext: 14pt;
     --baseline: 24pt;
     --max-width: 100%;
 
@@ -225,7 +225,7 @@ h1:nth-of-type(2) {
         font-size: calc(3* var(--basetext));
         margin-bottom: calc(2*var(--baseline));
         margin-top: calc(10*var(--baseline));
-        line-height: calc(2* var(--baseline));
+        line-height: calc(1.75* var(--baseline));
     }
 
 }
