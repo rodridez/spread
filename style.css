@@ -120,7 +120,7 @@ footer{
     display: flex;
     flex-direction: column;
     column-gap: 80px;
-    background-color: #5FC1EE;
+    background-color: #D4F2FF;
     justify-content: space-between;
     font-size: calc(0.75*var(--basetext));
     line-height: calc(0.7* var(--baseline));
@@ -224,7 +224,7 @@ h1:nth-of-type(2) {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #5FC1EE;
+    background-color: #D4F2FF;
     /* margin-left: calc(-1* var(--spacing));
     margin-right: calc(-1* var(--spacing)); */
 }
