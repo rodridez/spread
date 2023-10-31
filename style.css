@@ -15,15 +15,15 @@
 /*===================== Setting up 4 fonts =====================*/
 
 .font-1 {
-    font-family: 'Young Serif', serif;
+    font-family: 'Young Serif', serif;    
 }
 
 .font-2 {
-    font-family: 'UnifrakturCook', sans-serif;
+    font-family: 'UnifrakturCook', sans-serif;   
 }
 
 .font-3 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;    
 }
 
 .font-4 {
@@ -173,15 +173,6 @@ h1:nth-of-type(2) {
 
 /*===================== Setting up Mosaiacs =====================*/
 
-/* .mosaic-container {
-    height: 320px;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    margin-left: calc(-1* var(--spacing));
-    margin-top: calc(-1* var(--spacing));
-} */
-
 .mosaic-container {
     height: 320px;
     width: 100%;
@@ -189,25 +180,33 @@ h1:nth-of-type(2) {
     position: absolute;
     margin-left: calc(-1* var(--spacing));
     margin-top: calc(-1* var(--spacing));
-    display: grid;
-    grid-template-columns: 1fr, 1fr,;
+    display:auto;
+    grid-auto-rows: 15px;
 }
 
 .mosaic {
     font-size: calc(5* var(--basetext));
-    line-height: calc(1.5* var(--baseline));
+    /*line-height: calc(1.5* var(--baseline));*/
     opacity: 15%;
     color: #5FC1EE;
-
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    /*grid-template-rows: repeat(2, 8vw);*/
+    grid-row-gap: 60px;
 }
+
 .mosaic-2 {
     font-size: calc(4.5* var(--basetext));
     position: absolute;
     top: 0;
-    line-height: calc(1.6* var(--baseline));
+    /*line-height: calc(1.6* var(--baseline));*/
     opacity: 25%;
     text-align: right;
     color: #55A6CB;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    /*grid-template-rows: repeat(2, 8vw);*/
+    grid-row-gap: 60px;
 }
 
 .mosaic-container-mid {
@@ -310,7 +309,7 @@ h1:nth-of-type(2) {
         margin: auto;
         max-width: 900px;
     }
-    }
+}
 
 
 /*===================== Breakpoint 875px =====================*/
