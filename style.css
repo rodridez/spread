@@ -154,21 +154,25 @@ h1:nth-of-type(2) {
 }
 
 .h3-collapse {
-    position: absolute;
+    /* position: absolute; */
     color: #0175AA;
     mix-blend-mode: color-burn;
 }
 
 .h3-collapse-back {
     position: absolute;
+    top: 0px;
+    margin-top: calc(-1.5*var(--baseline));
     color: #55A6CB;
     opacity: 0.3;
     z-index: -1;
 }
 
 .h3-container {
+    position: relative;
     height: calc(3* var(--baseline));
     margin-bottom: var(--baseline);
+    top: var(--baseline);
 }
 
 /*===================== Setting up Mosaiacs =====================*/
