@@ -41,6 +41,17 @@ body {
     margin: auto; */
 }
 
+/* nav {  
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    position: fixed;
+    right: 0px;
+    margin-left: calc(-1* var(--spacing));
+    padding-left: calc(2* var(--spacing));
+    padding-right: calc( 2* var(--spacing));
+    font-size: calc(1* var(--basetext));
+   } */
+
 main {
     padding: var(--spacing);  
 }
@@ -148,13 +159,11 @@ h1:nth-of-type(2) {
     color: #5FC1EE;
     position: absolute;
     top: 30px;
-    font-family: 'Pixelify Sans', sans-serif;
     opacity: 0.5;
     z-index: -1;
 }
 
 .h3-collapse {
-    /* position: absolute; */
     color: #0175AA;
     mix-blend-mode: color-burn;
 }
@@ -184,23 +193,22 @@ h1:nth-of-type(2) {
     position: absolute;
     margin-left: calc(-1* var(--spacing));
     margin-top: calc(-1* var(--spacing));
-    display:auto;
-    grid-auto-rows: 15px;
+
 }
 
 .mosaic {
-    font-size: calc(5* var(--basetext));
+    font-size: calc(3.5* var(--basetext));
     /*line-height: calc(1.5* var(--baseline));*/
     opacity: 15%;
     color: #5FC1EE;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
     /*grid-template-rows: repeat(2, 8vw);*/
-    grid-row-gap: 60px;
+    grid-row-gap: 10px;
 }
 
 .mosaic-2 {
-    font-size: calc(4.5* var(--basetext));
+    font-size: calc(3* var(--basetext));
     position: absolute;
     top: 0;
     /*line-height: calc(1.6* var(--baseline));*/
@@ -210,7 +218,7 @@ h1:nth-of-type(2) {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
     /*grid-template-rows: repeat(2, 8vw);*/
-    grid-row-gap: 60px;
+    grid-row-gap: 10px;
 }
 
 .mosaic-container-mid {
@@ -223,7 +231,7 @@ h1:nth-of-type(2) {
 }
 
 .mosaic-container-end {
-    height: 320px;
+    height: 300px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -242,6 +250,10 @@ h1:nth-of-type(2) {
         margin-bottom: calc(2*var(--baseline));
         margin-top: calc(13*var(--baseline));
         line-height: calc(1.75* var(--baseline));
+    }
+
+    .mosaic, .mosaic-2 {
+        grid-row-gap: 10px;
     }
 
 }
@@ -300,6 +312,18 @@ h1:nth-of-type(2) {
         margin-top: calc(10*var(--baseline));
         line-height: calc(3.25* var(--baseline));
     }
+
+    .mosaic, .mosaic-2 {
+        grid-row-gap: 40px;
+    }
+
+    .mosaic {
+        font-size: calc(5* var(--basetext));
+    }
+
+    .mosaic-2 {
+        font-size: calc(4* var(--basetext));
+    }
   
     blockquote{
         max-width: calc(var(--max-width) - 10ch);
@@ -326,6 +350,10 @@ h1:nth-of-type(2) {
         margin-bottom: calc(2*var(--baseline));
         margin-top: calc(10*var(--baseline));
         line-height: calc(3.5* var(--baseline));
+    }
+
+    .mosaic, .mosaic-2 {
+        grid-row-gap: 60px;
     }
 
 }
