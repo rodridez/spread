@@ -41,16 +41,6 @@ body {
     margin: auto; */
 }
 
-/* nav {  
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    position: fixed;
-    right: 0px;
-    margin-left: calc(-1* var(--spacing));
-    padding-left: calc(2* var(--spacing));
-    padding-right: calc( 2* var(--spacing));
-    font-size: calc(1* var(--basetext));
-   } */
 
 main {
     padding: var(--spacing);  
@@ -357,6 +347,8 @@ h1:nth-of-type(2) {
     }
 
 }
+
+/*===================== Print settings =====================*/
 
 @media print {
     :root {
